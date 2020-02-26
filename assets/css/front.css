@@ -1,0 +1,274 @@
+.wss-number-fields input {
+	padding: 10px;
+}
+.make-inline {
+	width: -webkit-fit-content;
+	width: fit-content;
+	display: inline-block;
+}
+#available_days_delivery {
+	clear: both;
+}
+#available_days_delivery {
+	display: none;
+}
+#wss_subscription_field {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: flex-start;
+	-ms-align-items: flex-start;
+	align-items: flex-start;
+/*	min-height: 300px;*/
+	background: #b3b332;
+	color: #fff;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	padding: 15px 25px 33px;
+}
+#wss_subscription_field > h1 {
+	padding: 0;
+	margin: 0;
+	position: relative;
+	bottom: -3px;
+	font-size: 40px;
+}
+#wss_subscription_field > h1,
+.subscription-description,
+.checkout-label {
+	color: #fff;
+}
+.subscription-description {
+	font-size: 14px;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	max-width: 900px;
+	bottom: 2px;
+}
+.checkout-label {
+	font-size: 16px;
+	position: relative;
+}
+.choose-period {
+	position: relative;
+	margin-top: 9px;
+	margin-left: 7px;
+}
+#delivery_periods {
+	/*width: 60%;*/
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	justify-content: flex-start;
+	-ms-align-items: flex-start;
+	align-items: flex-start; 
+}
+.available_delivery_period {
+	margin-right: 90px;
+}
+#available_delivery_period_weekly {
+	margin-right: 60px;
+}
+#delivery_periods .input-radio > label {
+	position: relative;
+	top: 0;
+	font-size: 17px;
+	color: #fff;
+	left: 5px;
+}
+#delivery_periods .input-radio > label > input {
+	margin-right: 11px;
+}
+.pick-date-label { 
+	position: relative;
+	font-size: 17px;
+	margin-bottom: 3px;
+	left: 4px;
+}
+#wss_start_date {
+	margin-top: -1px;
+	margin-left: 3px;
+	height: 40px;
+	min-width: 202px;
+	max-width: 100%;
+}
+#available_days_delivery .input-checkbox .checkbox {
+	font-size: 17px;
+	color: #fff;
+}
+#available_days_delivery .input-checkbox .checkbox > input {
+	margin: 0 11px;
+}
+#available_delivery_period_weekly,
+#available_delivery_period_one_off {
+	position: relative;
+}
+#available_delivery_period_weekly {
+	right: 10px;
+}
+#available_delivery_period_one_off {
+	margin-right: 0;
+}
+
+#delivery_periods {
+	margin-left: 29px;
+}
+
+#available_days_delivery  {
+	margin-left: 159px;
+}
+
+#available_days_delivery .input-checkbox {
+	margin-right: 45px;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+#wss_start_date_field {
+	line-height: 1.3;
+	padding: 0 3px;
+	margin-bottom: 0;
+}
+
+/* new radiobuttons and checkbox */
+#delivery_periods .available_delivery_period .input-radio input, #available_days_delivery .input-checkbox input {
+	display: none;
+}
+
+#delivery_periods .available_delivery_period input:checked+label:after,  #available_days_delivery .input-checkbox input:checked+label:after {
+	visibility: visible;
+}
+
+#available_days_delivery .input-checkbox label, #delivery_periods .input-radio label {
+	line-height: 1.2;
+}
+
+#delivery_periods .available_delivery_period .radio:before,  #available_days_delivery .checkbox:before {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	content: '';
+	background: white;
+	border-radius: 50%; 
+	left: -30px;
+	top: 6px; 
+}
+
+#available_days_delivery .checkbox:before {
+	top: 7px;
+}
+
+#available_days_delivery .checkbox {
+	position: relative;
+}
+
+#delivery_periods .available_delivery_period .radio:after, #available_days_delivery .checkbox:after {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    content: '';
+    background: silver;
+    visibility: hidden;
+    border-radius: 50%;
+    left: -28px; 
+    top: 8px;
+}
+ 
+
+#available_days_delivery .checkbox:after {
+	 line-height: 0;
+	 left: -28px;
+	 top: 8.5px;
+	 font-size: 13px; 
+}
+
+
+.woocommerce form .form-row.input-radio, .woocommerce-page form .form-row.input-radio {
+	margin-top: 6px;
+}
+
+.available_days_delivery_wrap {
+	position: relative;
+	padding-bottom: 30px;
+}
+
+.available_days_delivery_wrap #available_days_delivery {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/*-- RESIZE --*/
+
+@media (max-width: 800px) {
+	.available_delivery_period {
+		margin-right: 45px;
+	}
+	#delivery_periods {
+		margin-left: 20px;
+	}
+	#available_delivery_period_weekly {
+		margin-right: 30px;
+	}
+	#delivery_periods .available_delivery_period .radio:before, #available_days_delivery .checkbox:before {
+		left: -20px;
+	}
+	#delivery_periods .available_delivery_period .radio:after, #available_days_delivery .checkbox:after {
+		left: -18px;
+	}
+	#available_days_delivery .input-checkbox {
+		margin-right: 38px;
+	}
+	#available_days_delivery {
+		margin-left: 23px;
+	}
+}
+
+@media (max-width: 640px) {
+	.available_days_delivery_wrap #available_days_delivery {
+		position: static;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.available_days_delivery_wrap {
+		padding-bottom: 0;
+	}
+}
+
+@media (max-width: 480px) {
+	#delivery_periods {
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap; 
+	}
+	#delivery_periods>div {
+		width: 50%;
+		margin-right: 0;
+	}
+	#delivery_periods>div:nth-child(3){
+		width: 100%;
+	}
+	#ui-datepicker-div {
+		left: 50%;
+		-webkit-transform: (translateX(-50%));
+		transform: (translateX(-50%));
+	}
+}

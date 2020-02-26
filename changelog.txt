@@ -1,0 +1,4 @@
+*** WooCommerce Smart Subscription Changelog ***
+
+2016.11.14 - version 1.0
+ * Initial Release :)
